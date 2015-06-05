@@ -1,32 +1,43 @@
-html,
-body {
-    width: 100%;
-    height: 100%;
+body{
+    background: #e8e8e8;
 }
 
-body {
+.icon-block {
+    padding: 0 15px;
+}
+
+#nav-mobile li {
+    height:50px;
+}
+
+#nav-mobile li a{
+    line-height: 52px;
+}
+
+#nav-mobile li a:hover{
+    line-height: 52px;
+    font-weight: 600;
+}
+
+.userd{
+    color: #737373;
     background: #fff;
 }
 
-
-#logo-c {
-    height: 120px;
-    margin-bottom: 22px;
-    font-size: 25px;
-    line-height: 130px;
-    text-align: center;
+#user-img{
+    margin-top: 8px;
+    height: 45px;
+    width: 45px;
 }
 
-.activator{
-    height: 200px;
+#user-data,#user-data:hover,.userd:hover{
+    background: #fff;
 }
 
-p a{
-    color: #006064;
+#logo-container{
+    margin-top: -5px;
 }
-
-@media only screen and (max-width: 992px) {
-    header {
-    padding-left: 0px;
-}
+#deatil-tab{
+    padding-left: 70px;    
+    padding-right: 30px;
 }
