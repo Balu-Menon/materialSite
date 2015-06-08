@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>HomePage</title>
+    
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="sidr/stylesheets/jquery.sidr.dark.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <nav class="white" style="height:60px;position:fixed;z-index:5000;" role="navigation">
+        <div id="deatil-tab" class="nav-wrapper">
+            <a id="logo-container" href="#" class="brand-logo black-text">Logo</a>
+            <ul class="right">
+                <li>
+                    <a class="userd">Balram P</a>
+                </li>
+                <li>
+                    <a id="user-data" href="#" class="black-text">
+                        <img id="user-img" class="circle responsive-img" src="img/wall.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="light-blue lighten-1" style="top:60px;height:50px;position:fixed;z-index:5000;" role="navigation">
+        <div class="nav-wrapper">
+            <ul class="right hide-on-med-and-down" id="right-tabs" style="display:block;padding-left:50px;">
+                <li>
+                    <a href="#" class="no-hover tooltipped" data-position="bottom" data-delay="50" data-tooltip="DashBoard">
+                        <i class="mdi-action-view-quilt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-hover tooltipped" data-position="bottom" data-delay="50" data-tooltip="Refresh">
+                        <i class="mdi-navigation-refresh"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-hover tooltipped" data-position="bottom" data-delay="50" data-tooltip="More" id="right-menu" href="#right-menu">
+                        <i class="mdi-navigation-more-vert"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav" style="top:60px;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recent Cards</a></li>
+                <li><a href="#">Reminder</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse" style="display:block;padding-left:50px;margin-top:-5px;">
+                <i class="mdi-navigation-menu"></i>
+            </a>
+        </div>
+    </nav>
+    
+    <div id="sidr-right" class="sidr right">
+        <ul>
+            <li class="active"><a href="#">Sample link 1</a></li>
+            <li><a href="#">Sample link 2</a></li>
+            <li><a href="#">Sample link 3</a></li>
+            <li><a href="#">Sample link 4</a></li>
+            <li><a href="#">Sample link 5</a></li>
+        </ul>
+    </div>
+    
+    <div class="fixed-action-btn hide-on-med-and-down" style="bottom: 45px; right: 24px;">
+        <form action="#" id="searchform" method="get">
+            <a class="btn-floating btn-large cyan darken-4">
+                <i class="large mdi-action-search"></i>
+            </a>
+            <input type="text" name="s" class="search">
+        </form>
+    </div>
+    
+    <div class="container" style="Padding-top:150px;">
+        <div class="section">
+            <div class="row isotope">
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <a class="modal-trigger" href="#modal1">
+                                <img class="" src="img/wall.jpg">
+                                <span class="card-title">Card Title</span>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                            <a href='#'>This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <a class="modal-trigger" href="#modal2">
+                                <img src="img/wall2.jpg">
+                                <span class="card-title">Card Title</span>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                            <a href='#'>This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <a class="modal-trigger" href="#modal3">
+                                <img src="img/wall.jpg">
+                                <span class="card-title">Card Title</span>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                            <a href='#'>This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/wall2.jpg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                            <a href='#'>This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/wall.jpg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                            <a href='#'>This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/wall2.jpg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                            <a href='#'>This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/wall.jpg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                            <a href='#'>This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/wall2.jpg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                            <a href='#'>This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!--Modals-->
+    <div id="modal1" class="modal bottom-sheet" style="max-height:83.5%;min-height:83.5%;">
+        <i class="mdi-navigation-expand-more modal-close right " style="font-size:45px;padding-right:20px;cursor:pointer;" data-target="modal1"></i>
+        <i class="mdi-image-loupe right tooltipped" data-position="bottom" data-delay="20" data-tooltip="Add New" style="font-size:45px;padding-right:5px;cursor:pointer;"></i>
+        <div class="modal-content">
+            <h4>Region One</h4>
+            <ul class="collection">
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <img src="img/wall2.jpg" alt="" class="circle">
+                        <span class="title">Building One</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <img src="img/wall2.jpg" alt="" class="circle">
+                        <span class="title">Building One</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <i class="mdi-action-assessment circle green"></i>
+                        <span class="title">Building Three</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <i class="mdi-av-play-arrow circle red"></i>
+                        <span class="title">Building Four</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+    <div id="modal2" class="modal bottom-sheet" style="max-height:83.5%;min-height:83.5%;">
+        <i class="mdi-navigation-expand-more modal-close right " style="font-size:45px;padding-right:20px;cursor:pointer;" data-target="modal2"></i>
+        <i class="mdi-image-loupe right tooltipped" data-position="bottom" data-delay="20" data-tooltip="Add New" style="font-size:45px;padding-right:5px;cursor:pointer;"></i>
+        <div class="modal-content">
+            <h4>Region Two</h4>
+            <ul class="collection">
+            </ul>
+            <div class="no-content" style="font-size:100px;padding-top:10%;text-align:center;">
+                <i class="mdi-image-loupe grey-text"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal3" class="modal bottom-sheet" style="max-height:83.5%;min-height:83.5%;">
+        <i class="mdi-navigation-expand-more modal-close right " style="font-size:45px;padding-right:20px;cursor:pointer;" data-target="modal3"></i>
+        <i class="mdi-image-loupe right tooltipped" data-position="bottom" data-delay="20" data-tooltip="Add New" style="font-size:45px;padding-right:5px;cursor:pointer;"></i>
+        <div class="modal-content">
+            <h4>Region Three</h4>
+            <ul class="collection">
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <img src="img/wall2.jpg" alt="" class="circle">
+                        <span class="title">Building One</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <img src="img/wall2.jpg" alt="" class="circle">
+                        <span class="title">Building One</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <i class="mdi-file-folder circle"></i>
+                        <span class="title">Building Two</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p class="truncate">Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <i class="mdi-action-assessment circle green"></i>
+                        <span class="title">Building Three</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <i class="mdi-av-play-arrow circle red"></i>
+                        <span class="title">Building Four</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <img src="img/wall2.jpg" alt="" class="circle">
+                        <span class="title">Building One</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <img src="img/wall2.jpg" alt="" class="circle">
+                        <span class="title">Building One</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <i class="mdi-file-folder circle"></i>
+                        <span class="title">Building Two</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p class="truncate">Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <i class="mdi-action-assessment circle green"></i>
+                        <span class="title">Building Three</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                <li class="row collection-item avatar">
+                    <div class="col s3">
+                        <i class="mdi-av-play-arrow circle red"></i>
+                        <span class="title">Building Four</span>
+                        <p>Street<br>City</p>
+                    </div>
+                    <div class="col s5 hide-on-med-and-down">
+                        <p>Description: I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="col s3 right-align hide-on-med-and-down">
+                        <p>Timing: 24x7<br>Contact: +91 8129130866<br>123 4567 890</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="mdi-action-grade"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+  
+  <!--  Scripts-->
+  <script src="../../mat1/js/jquery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+    <script type='text/javascript' src='js/isotope.min.js'></script>
+    <script type='text/javascript' src='js/packery-mode.pkgd.min.js'></script>
+    <script type='text/javascript' src='sidr/jquery.sidr.min.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+    <script type='text/javascript' src='js/home_1.js'></script>
+  </body>
+</html>

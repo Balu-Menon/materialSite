@@ -66,3 +66,18 @@ input.search {
 .nav-wrapper #right-tabs li a{
     margin-top: -5px;
 }
+
+#sidr-right{
+    box-shadow: inset 0 0 5px 5px transparent;
+    background: #1c1c1c;
+    width: 280px;
+}
+
+#sidr-right ul, #sidr-right li, #sidr-right li ul {
+    border: none;
+}
+
+.sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span, .sidr ul li ul li>a:hover {
+    box-shadow: inset 0 0 5px 5px transparent;
+    background: #333;
+}
