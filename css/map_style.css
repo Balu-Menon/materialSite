@@ -1,0 +1,11 @@
+#map { 
+    top:-420px;
+    height: 560px;
+    z-index:-1;
+    padding-bottom:0px;
+}
+
+.frm-in{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

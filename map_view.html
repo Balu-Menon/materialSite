@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>HomePage</title>
+    
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="sidr/stylesheets/jquery.sidr.dark.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+
+</head>
+<body>
+    <nav class="white" style="height:60px;position:fixed;z-index:5000;" role="navigation">
+        <div id="deatil-tab" class="nav-wrapper">
+            <a id="logo-container" href="#" class="brand-logo black-text">Logo</a>
+            <ul class="right">
+                <li>
+                    <a class="userd">Balram P</a>
+                </li>
+                <li>
+                    <a id="user-data" href="#" class="black-text">
+                        <img id="user-img" class="circle responsive-img" src="img/wall.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="light-blue lighten-1" style="top:60px;height:50px;position:fixed;z-index:5000;" role="navigation">
+        <div class="nav-wrapper">
+            <ul class="right hide-on-med-and-down" id="right-tabs" style="display:block;padding-left:50px;">
+                <li>
+                    <a href="#" class="no-hover tooltipped" data-position="bottom" data-delay="50" data-tooltip="DashBoard">
+                        <i class="mdi-action-view-quilt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-hover tooltipped" data-position="bottom" data-delay="50" data-tooltip="Refresh">
+                        <i class="mdi-navigation-refresh"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-hover tooltipped" data-position="bottom" data-delay="50" data-tooltip="More" id="right-menu" href="#right-menu">
+                        <i class="mdi-navigation-more-vert"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav" style="top:60px;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recent Cards</a></li>
+                <li><a href="#">Reminder</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse" style="display:block;padding-left:50px;margin-top:-5px;">
+                <i class="mdi-navigation-menu"></i>
+            </a>
+        </div>
+    </nav>
+    
+    <div id="sidr-right" class="sidr right">
+        <ul>
+            <li class="active"><a href="#">Sample link 1</a></li>
+            <li><a href="#">Sample link 2</a></li>
+            <li><a href="#">Sample link 3</a></li>
+            <li><a href="#">Sample link 4</a></li>
+            <li><a href="#">Sample link 5</a></li>
+        </ul>
+    </div>
+    
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large cyan darken-2">
+            <i class="large mdi-maps-map" style="font-size:30px;color:#fff;"></i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating  grey lighten-4 btn tooltipped modal-trigger" href="#modal1" data-position="left" data-delay="50" data-tooltip="Satellite View">
+                    <i style="color:#1c1c1c;" class="mdi-maps-satellite"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating  grey lighten-4 btn tooltipped modal-trigger" href="#addVenue" data-position="left" data-delay="50" data-tooltip="Add Venue">
+                    <i style="color:#1c1c1c;" class="mdi-maps-pin-drop"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating  grey lighten-4 btn tooltipped modal-trigger" href="#locations" data-position="left" data-delay="50" data-tooltip="My Venues">
+                    <i style="color:#1c1c1c;" class="mdi-maps-my-location"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating  grey lighten-4 btn tooltipped" data-position="left" data-delay="50" data-tooltip="Search">
+                    <i style="color:#1c1c1c;" class="mdi-action-search"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--Map View-->
+    <div id="map" style="height:665px;"></div>
+    
+    <!--Modal Structures-->
+    <div id="locations" class="modal" style="z-index:9999;">
+        <div class="modal-content">
+            <h4>My Venues</h4>
+            <p>No Venues.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Dismiss</a>
+        </div>
+    </div>
+
+    <div id="addVenue" class="modal" style="z-index:9999;max-height:600px;">
+        <div class="modal-content">
+            <h4>New Venue</h4>
+            <form>
+                <div class="row center frm-in">
+                    <div class="input-field col s12">
+                        <i class="mdi-maps-place prefix"></i>
+                        <input id="user" type="text" class="validate">
+                        <label for="user">Venue Name</label>
+                    </div>
+                </div>
+                <div class="row center frm-in">
+                    <div class="input-field col s12">
+                        <i class="mdi-maps-my-location prefix"></i>
+                        <input id="user" type="text" class="validate">
+                        <label for="user">Address</label>
+                    </div>
+                </div>
+                <div class="row center frm-in">
+                    <div class="input-field col s12">
+                        <i class="mdi-editor-mode-edit prefix"></i>
+                        <textarea length="120" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">Description</label>
+                    </div>
+                </div>
+                <div class="row center frm-in">
+                    <input class="" name="group1" type="radio" id="test1" checked="true"/>
+                    <label for="test1">Public</label>
+                    <input class="" name="group1" type="radio" id="test2" />
+                    <label for="test2">Private</label>
+                </div>
+                <div class="row frm-in">
+                    <a class="modal-action modal-close waves-effect waves-light btn left">
+                        <i class="mdi-navigation-arrow-back left"></i>Cancel
+                    </a>
+                    <input id="venue" type="submit" value="Add Venue" value="Add Venue" class="btn right">
+                </div>      
+            </form>
+        </div>
+    </div>
+
+     <!--  Scripts-->
+  <script src="../../mat1/js/jquery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+    <script type='text/javascript' src='js/isotope.min.js'></script>
+    <script type='text/javascript' src='js/packery-mode.pkgd.min.js'></script>
+    <script type='text/javascript' src='sidr/jquery.sidr.min.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+    <script type='text/javascript' src='js/map.js'></script>
+  </body>
+</html>

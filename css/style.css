@@ -81,3 +81,12 @@ input.search {
     box-shadow: inset 0 0 5px 5px transparent;
     background: #333;
 }
+
+.abcdef .collapsible-header{
+    height: 5rem;
+}
+
+.build-addr p{
+    padding-bottom: 0;
+    padding-top: 5px;
+}
